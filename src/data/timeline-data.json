@@ -1,0 +1,38 @@
+[
+    {
+      "id": "1",
+      "image": "css/images/time1.png",
+      "name": "The Kelly & Ryan Show",
+      "position": "A timeline is a display of a list of events in chronological order. It is typically a graphic design showing a long bar labelled with dates paralleling it, and usually contemporaneous events; a Gantt chart is a form of timeline used in project management.",
+      "email": "kelly.ryan@email.com",
+      "phone": "(206) 334-9990",
+      "startdate": "02/06/2013"
+    },
+    {
+      "id": "2",
+      "image": "css/images/time2.png",
+      "name": "The Rachel Ray Show",
+      "position": "A timeline is a display of a list of events in chronological order. It is typically a graphic design showing a long bar labelled with dates paralleling it, and usually contemporaneous events; a Gantt chart is a form of timeline used in project management.",
+      "email": "rachel@email.com",
+      "phone": "(324) 908-1287",
+      "startdate": "09/30/2020"
+    },
+    {
+      "id": "3",
+      "image": "css/images/time3.png",
+      "name": "The Today Show",
+      "position": "A timeline is a display of a list of events in chronological order. It is typically a graphic design showing a long bar labelled with dates paralleling it, and usually contemporaneous events; a Gantt chart is a form of timeline used in project management.",
+      "email": "info@email.com",
+      "phone": "(408) 788-5647",
+      "startdate": "11/03/2019"
+    },
+    {
+      "id": "4",
+      "image": "css/images/time4.png",
+      "name": "KCBS Radio",
+      "position": "First Responders Access – In Case of Emergency",
+      "email": "info@email.com",
+      "phone": "(408) 788-5647",
+      "startdate": "11/03/2019"
+    }
+  ]
