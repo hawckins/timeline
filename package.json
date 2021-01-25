@@ -1,0 +1,15 @@
+{
+  "name": "timelineapp",
+  "version": "1.0.0",
+  "description": "An Oracle JavaScript Extension Toolkit(JET) web app",
+  "dependencies": {
+    "@oracle/oraclejet": "https://artifactory-slc.oraclecorp.com/artifactory/ojet-dev-local/oracle-oraclejet-10.0.0.tgz"
+  },
+  "devDependencies": {
+    "@oracle/oraclejet-tooling": "https://artifactory-slc.oraclecorp.com/artifactory/ojet-dev-local/oracle-oraclejet-tooling-10.0.0.tgz"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": true
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Oracle JET Starter Template - Web Blank</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="viewport-fit=cover, initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" href="css/images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="css/images/touchicon.png">
+    <meta name="apple-mobile-web-app-title" content="Oracle JET">
+
+    <!-- injector:theme -->
+    <link rel="stylesheet" href="css/libs/oj/v10.0.0/redwood/oj-redwood-min.css" id="css" />
+    <!-- endinjector -->
+    <link rel="stylesheet" href="css/app.css" id="css" />
+    
+  </head>
+  <body>
+    <div class="outerContainer">
+      <div class="innerContainer">
+          <div class="timeHead"><h2>Timeline</h2></div>
+      </div>
+      <div id="listviewContainer" class="demo-container">
+      <div id="listitemlayout" class="demo-page">
+        <oj-list-view
+              id="listviewtwo"
+              aria-label="list with list item layout"
+              data="[[dataProvider1]]"
+              class="demo-list-view  oj-sm-padding-2x-vertical"
+              gridlines.item="visible"
+              selected="{{selectorSelectedItems1}}"
+              on-selected-changed="[[gotoContent]]"
+              selection-mode="single">
+              <template slot="itemTemplate" data-oj-as="item">
+              <li>
+                  <oj-list-item-layout>
+                  <oj-avatar
+                      slot="leading"
+                      role="img"
+                      size="xs"
+                      initials="[[item.data.initials]]"
+                      src="[[item.data.image]]"
+                      :aria-label="[['Avatar of ' + item.data.name]]"
+                      :title="[['Avatar of ' + item.data.name]]">
+                  </oj-avatar>
+                  <div class="oj-typography-body-md oj-typography-bold">
+                      <oj-bind-text value="[[item.data.name]]"></oj-bind-text>
+                  </div>
+                  <div slot="secondary" class="oj-typography-body-sm">
+                      <oj-bind-text value="[[item.data.position]]"></oj-bind-text>
+                  </div>
+                  <div slot="tertiary"
+                      class="oj-typography-body-xs oj-text-color-secondary">
+                      <div>
+                      <oj-bind-text value="[[item.data.email]]"> </oj-bind-text>
+                      </div>
+                  </div>
+                  <div slot="metadata"
+                      class="oj-typography-body-md oj-text-color-secondary">
+                      <oj-bind-text value="[[item.data.startdate]]"> </oj-bind-text>
+                  </div>
+                </div>
+                  </oj-list-item-layout>
+              </li>
+              </template>
+          </oj-list-view>
+        </div>
+
+        <div id="listitemcontent" class="demo-page demo-page2-hide">
+          <oj-button id="buttonIcon2" on-oj-action="[[gotoList]]" disabled="[[disabled]]">
+            <span slot="startIcon" class="oj-ux-ico-chevron-left"></span>
+          Back
+          </oj-button>
+          <div class="oj-sm-margin-2x-top demo-panel">
+              <span>
+                  <oj-bind-text value="[[content]]"></oj-bind-text>
+              </span> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      // The "oj_whenReady" global variable enables a strategy that the busy context whenReady,
+      // will implicitly add a busy state, until the application calls applicationBootstrapComplete
+      // on the busy state context.
+      window["oj_whenReady"] = true;
+    </script>
+    <script type="text/javascript" src="js/libs/require/require.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
